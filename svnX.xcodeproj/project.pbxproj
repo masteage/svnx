@@ -60,8 +60,7 @@
 		8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165FFE840EACC02AAC07 /* InfoPlist.strings */; };
 		8D15AC320486D014006FF6A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4B0FDCFA73011CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
-		F20521D10A5D2159003F966A /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20521BE0A5D2159003F966A /* Sparkle.framework */; };
-		F20523280A5D2437003F966A /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F20521BE0A5D2159003F966A /* Sparkle.framework */; };
+		C1034C501D65B7FB00E2F538 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1034C4F1D65B7FB00E2F538 /* Sparkle.framework */; };
 		F20524320A5D3C9A003F966A /* GetEthernetAddrSample.c in Sources */ = {isa = PBXBuildFile; fileRef = F20524300A5D3C9A003F966A /* GetEthernetAddrSample.c */; };
 		F20525080A5D3D7F003F966A /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F205246A0A5D3D7E003F966A /* IOKit.framework */; };
 		F217F14A05F9EC0700286411 /* SvnFileStatusToColourTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = F217F14805F9EC0700286411 /* SvnFileStatusToColourTransformer.m */; };
@@ -144,7 +143,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F20523280A5D2437003F966A /* Sparkle.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,7 +220,7 @@
 		83EE48870DD226C100542832 /* ViewUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewUtils.h; sourceTree = "<group>"; };
 		8D15AC360486D014006FF6A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		8D15AC370486D014006FF6A4 /* svnX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = svnX.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F20521BE0A5D2159003F966A /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = SPARKLE_BUILD; };
+		C1034C4F1D65B7FB00E2F538 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = ../../../Users/taeseongsong/dev/My_Frameworks/Sparkle/Sparkle.framework; sourceTree = "<group>"; };
 		F20524020A5D3945003F966A /* SUUpdater.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SUUpdater.h; path = Sparkle.framework/Versions/A/Headers/SUUpdater.h; sourceTree = SPARKLE_BUILD; };
 		F20524300A5D3C9A003F966A /* GetEthernetAddrSample.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 30; path = GetEthernetAddrSample.c; sourceTree = "<group>"; };
 		F20524310A5D3C9A003F966A /* GetEthernetAddrSample.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = GetEthernetAddrSample.h; sourceTree = "<group>"; };
@@ -352,8 +350,8 @@
 			files = (
 				830910EE11715F6600E387C8 /* libsvnXplus.a in Frameworks */,
 				8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */,
-				F20521D10A5D2159003F966A /* Sparkle.framework in Frameworks */,
 				F20525080A5D3D7F003F966A /* IOKit.framework in Frameworks */,
+				C1034C501D65B7FB00E2F538 /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,8 +361,8 @@
 		1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C1034C4F1D65B7FB00E2F538 /* Sparkle.framework */,
 				F205246A0A5D3D7E003F966A /* IOKit.framework */,
-				F20521BE0A5D2159003F966A /* Sparkle.framework */,
 				1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */,
 				8352C4780FF49F9D00C978F5 /* Carbon.framework */,
 				830910ED11715F6600E387C8 /* libsvnXplus.a */,
@@ -695,8 +693,11 @@
 /* Begin PBXProject section */
 		2A37F4A9FDCFA73011CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = F2FD1A1E0855F03C00550248 /* Build configuration list for PBXProject "svnX" */;
 			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				English,
@@ -962,6 +963,10 @@
 		834DE4110D9C317100E6F26B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/taeseongsong/dev/My_Frameworks/Sparkle,
+				);
 				INFOPLIST_FILE = Info.plist;
 			};
 			name = Release;
@@ -1024,7 +1029,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = svnX;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT = macosx10.9;
 				SPARKLE_BUILD = $SRCROOT/sparkle/build/Release;
 				SVN_LIBS = /opt/subversion/lib;
 				USER_HEADER_SEARCH_PATHS = "$APR_SVN/svn $(inherited)";
@@ -1082,7 +1087,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = svnX;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT = macosx10.9;
 				SPARKLE_BUILD = $SRCROOT/sparkle/build/Release;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SVN_LIBS = /opt/subversion/lib;
@@ -1093,6 +1098,10 @@
 		F2EF3C3C0CD296C6000FBD9D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/taeseongsong/dev/My_Frameworks/Sparkle,
+				);
 				INFOPLIST_FILE = Info.plist;
 			};
 			name = Debug;
